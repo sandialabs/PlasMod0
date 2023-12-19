@@ -1,0 +1,102 @@
+***************************************
+******** PlasMod0 Documentation *******
+
+Last edit: 02/11/2022
+
+PlasMod0 is a 0-dimensional plasma modeling which approximates a plasma as a well-stirred reactor. Two temperatures are used, one for electrons and one for ions and neutrals. This model was originally developed for laser produced plasmas in single-particle aerosol mass spectrometers. As a result, there are some specialized capabilities that include spherical expansion into vacuum at a user-specified rate and photon reactions.
+
+The model is in python 2.7, and has been tested and used on Redhat Enterprise Linux 7.7. Scipy and numpy are required.
+
+Two input files are required, the reaction mechanism file (csv format) and the problem setup class (a text file containing a python class).
+
+***************************************
+Setup Class File
+***************************************
+A python class called Setup() must contain an instantiation function which defines the following variables. Because it will be executed as python code, this can include reading from a file or other calculations as needed. All units are SI unless otherwise indicated. At the end of the instantiation, you must call self.find_specials() to find and identify the species treated as special by the model.
+
+self.sim_name (string): The name of the simulation, which should correspond to the name of the setup class file. 
+
+self.rxn_file (string) : Path to the csv file containing the reaction mechanism.
+
+self.xsec_folder (string) : Path to folder containing cross section data files that are referenced in the rxn_file 
+
+self.E_dc (float) : applied DC electric field (V/m)
+
+self.species (list of strings): A list of species names. It must include 'e-' for electrons and the following 'special' species: 'Te' for electron temeprature, 'Tg' for gas temperature and 'emom' for electron momentum. The species names should NOT contain any commas or the sequence .
+
+self.n0 (list of floats) : The initial number densities of each species in the list self.species. The order must match and the special species must be included. (m^-3)
+
+self.m (list of floats) : The mass of each species in the list self.species. The order must match and the special species must be included. (kg) 
+
+self.q (list of floats) : The charge of each species in the list self.species. The order must match and the special species must be included with a charge of 0. (C) 
+
+self.t (numpy array) : A 1D array of timesteps at which output will be generated.
+
+self.use_boltz (Boolean) : Use a boltzmann solver? If this is False, the electron energy distribution will be assumed Maxwellian. If it is ture, Multibolt will be called. The coupling with Multibolt is not robust.
+
+self.EN (list of floats, V*m^2) : List of values of E/N for which a table of electron temperature and rates would be generated. 
+
+self.tboltz_update (list of floats, s) : List of times at which the Boltzmann solver should be updated. Set to [1e30] to turn off updating.
+
+self.mom_tol (float, ?) Solver tolerance to give to odeint for momentum transfer.
+
+self.solver_mxstep (int) : Maximum number of internal timesteps to allow odeint to take. A larger number allows the solver to use more 'brute force'.
+
+**Required Functions**
+Several functions must be declared in the input file, in order to properly setup the problem.
+
+def find_specials(self):
+	# Identify position of each 'special' species in the species arrays
+	for i,name in enumerate(self.species):
+		if name == 'e-':
+			self.ie = i
+		if name == 'Te':
+			self.ite = i
+		if name == 'Tg':
+			self.itg = i
+		if name == 'emom':
+			self.iemom = i  
+
+def expansion_rate(self, t): This function returns the rate of change of the plasma volume in m^3/s. It can be a function of time, t. This can be constant if there is no expansion.
+
+def photon_flux(self, t): This function returns the photon flux in 1/m^2/s, it can be a function of time, t. This can be 0 if there is no externally applied laser.
+
+def special_rate(self, rxn,n,ite,itg,ie): This function returns the rate of a reaction with a special dependence (not Arrhenius or cross section).
+
+***************************************
+Reaction Mechanism File
+***************************************
+The reaction mechanism file is a csv file containing several columns. The first line of the csv file is a header and is ignored. Thereafter each line represents a reaction and there should be no blank lines.
+
+1. Reaction Name 
+The reaction name should be of the format 'A + B -> C + D' and will be parsed to determine the reactions and products of each reaction. There can be an arbitrary number of reactants and products. There must be spaces between the species names and '+' and before and after the '->'. Photons (e.g. from a laser) can be included as reactants as 'hv'.
+
+2. Reaction Rate
+For rate-based reactions, the rate goes in this column in Arhenius format. For one reactant the units are s^-1. For two reactants, m^3/s. For three reactants, m^6/s. The Arrhenius format: A*T**n*exp(-Ea/kT). Where T can be Te or Tg for the electron temperature or gas temperature in K. n is unitless. Ea is the activation energy in eV. The second and third terms are optional. Examples of acceptable rates are:
+	1.00e-15
+	1.00e-30*(Te)**-0.5
+	1.00e-15*(Tg)**-0.5
+	1.00e-15*(Te)**-0.5*exp(-2.0/kTe)
+	1.00e-15*(Tg)**-0.5*exp(-2.0/kTg)
+	1.00e-15*(Tg)**-0.5*exp(2.0/kTg)
+Note that the text is parsed specifically as Arrhenius format, NOT an arbitrary function of Te or Tg. For details on how this column is parsed, refer to the function convert_rate_to_num in reaction.py.
+
+For rates which do not fit in Arrhenius format, the first character of this column should be '*', followed by a unique string to label that reaction. For example, a special three-body recombination rate might be '*tbr'. The code to specify the rate can then be included in the Setup Class file in the function special_rate.
+
+If photons are included a reactants, the units of A may be different in order to use the photon flux rather than density.
+
+For cross-section-based reactions, this column should be the name of the file containing the energy in J in the first column and the cross section in m^2 in the second column. This file must be located in the folder self.xsec_folder.
+
+3. Delta(E),electrons
+The change in energy of electrons as a result of this reaction, in eV. For example, for electron impact excitation reactions, this would typically be a negative number equal to the excitation energy.
+
+For elastic collisions between electrons and heavy species, this should be the keyword 'elastic'.
+
+4. Delta(E),gas
+The change in energy of heavy species as a result of this reaction, in eV. For example, for exothermic chemical reactions, this would typically be a negative number equal to the change in enthalpy.
+
+For elastic collisions between electrons and heavy species, this should be the keyword 'elastic'.
+
+5. Reference
+The reference for the reaction rate and any notes on how that rate/cross section was obtained (e.g. assumptions, equation numbers, approximation by analogy).
+  

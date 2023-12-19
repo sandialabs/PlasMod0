@@ -1,0 +1,91 @@
+Reaction,"k (Te and Tg in K, Ea in eV)","delata(E), electron (eV)","delta(E), gas (eV)",Reference
+e- + Al -> Al42S + e-,Al0_to_Al42S_Gryzinski.dat,-3.143,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al -> Al34P + e-,Al0_to_Al34P_Gryzinski.dat,-3.598,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al -> Al32D + e-,Al0_to_Al32D_Gryzinski.dat,-4.021,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al -> Al42P + e-,Al0_to_Al42P_Gryzinski.dat,-4.085,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al -> Al52S + e-,Al0_to_Al52S_Gryzinski.dat,-4.673,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al -> Aly2D + e-,Al0_to_Aly2D_Gryzinski.dat,-4.827,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al42S -> Al32D + e-,Al42S_to_Al32D_Gryzinski.dat,-0.878,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al42S -> Al42P + e-,Al42S_to_Al42P_Gryzinski.dat,-0.942,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al42S -> Al52S + e-,Al42S_to_Al52S_Gryzinski.dat,-1.53,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al42S -> Aly2D + e-,Al42S_to_Aly2D_Gryzinski.dat,-1.684,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al32D -> Al42P + e-,Al32D_to_Al42P_Gryzinski.dat,-0.064,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al32D -> Al52S + e-,Al32D_to_Al52S_Gryzinski.dat,-0.652,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al32D -> Aly2D + e-,Al32D_to_Aly2D_Gryzinski.dat,-0.806,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al42P -> Al52S + e-,Al42P_to_Al52S_Gryzinski.dat,-0.588,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al42P -> Aly2D + e-,Al42P_to_Aly2D_Gryzinski.dat,-0.742,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al52S -> Aly2D + e-,Al52S_to_Aly2D_Gryzinski.dat,-0.154,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al42S -> Al + e-,Al42S_to_Al0_Gryzinski.dat,3.143,0,superelastic
+e- + Al34P -> Al + e-,Al34P_to_Al0_Gryzinski.dat,3.598,0,superelastic
+e- + Al32D -> Al + e-,Al32D_to_Al0_Gryzinski.dat,4.021,0,superelastic
+e- + Al42P -> Al + e-,Al42P_to_Al0_Gryzinski.dat,4.085,0,superelastic
+e- + Al52S -> Al + e-,Al52S_to_Al0_Gryzinski.dat,4.673,0,superelastic
+e- + Aly2D -> Al + e-,Aly2D_to_Al0_Gryzinski.dat,4.827,0,superelastic
+e- + Al32D -> Al42S + e-,Al32D_to_Al42S_Gryzinski.dat,0.878,0,superelastic
+e- + Al42P -> Al42S + e-,Al42P_to_Al42S_Gryzinski.dat,0.942,0,superelastic
+e- + Al52S -> Al42S + e-,Al52S_to_Al42S_Gryzinski.dat,1.53,0,superelastic
+e- + Aly2D -> Al42S + e-,Aly2D_to_Al42S_Gryzinski.dat,1.684,0,superelastic
+e- + Al42P -> Al32D + e-,Al42P_to_Al32D_Gryzinski.dat,0.064,0,superelastic
+e- + Al52S -> Al32D + e-,Al52S_to_Al32D_Gryzinski.dat,0.652,0,superelastic
+e- + Aly2D -> Al32D + e-,Aly2D_to_Al32D_Gryzinski.dat,0.806,0,superelastic
+e- + Al52S -> Al42P + e-,Al52S_to_Al42P_Gryzinski.dat,0.588,0,superelastic
+e- + Aly2D -> Al42P + e-,Aly2D_to_Al42P_Gryzinski.dat,0.742,0,superelastic
+e- + Aly2D -> Al52S + e-,Aly2D_to_Al52S_Gryzinski.dat,0.154,0,superelastic
+e- + Al -> Al+ + e- + e-,Al_eimpact_ionization.dat,-5.985,0,"Y.-K. Kim and P. M. Stone, Phys. Rev. A, 64, 052707 (2001)"
+e- + Al42S -> Al+ + e- + e-,Al42S_to_Al+_Gryzinski.dat,-2.842,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al34P -> Al+ + e- + e-,Al34P_to_Al+_Gryzinski.dat,-2.388,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al32D -> Al+ + e- + e-,Al32D_to_Al+_Gryzinski.dat,-1.976,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al42P -> Al+ + e- + e-,Al42P_to_Al+_Gryzinski.dat,-1.901,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Al52S -> Al+ + e- + e-,Al52S_to_Al+_Gryzinski.dat,-1.313,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+e- + Aly2D -> Al+ + e- + e-,Aly2D_to_Al+_Gryzinski.dat,-1.171,0,"M. Gryzinski, ""Classical Theory of Atomic Collisions. I. Theory of Inelastic Collisions"", Phys. Rev., 138, 2A (1965)."
+hv + hv + Al -> Al+ + e-,8.27E-56,4.015,0,Morel 2010
+e- + Al -> e- + Al,Al_elastic_Ryabikh.dat,elastic,elastic,"Y.I. Ryabikh and I. I. Fabrikant, ""Partial-wave analysis of low-energy electron scattering by aluminium atoms"" J. Phys. B: At. Mol. Phys. 14, 349 (1981), and assume 1/E above 2.7 eV"
+e- + Al42S -> e- + Al42S,Al_elastic_Ryabikh.dat,elastic,elastic,assumed same as ground
+e- + Al34P -> e- + Al34P,Al_elastic_Ryabikh.dat,elastic,elastic,assumed same as ground
+e- + Al32D -> e- + Al32D,Al_elastic_Ryabikh.dat,elastic,elastic,assumed same as ground
+e- + Al42P -> e- + Al42P,Al_elastic_Ryabikh.dat,elastic,elastic,assumed same as ground
+e- + Al52S -> e- + Al52S,Al_elastic_Ryabikh.dat,elastic,elastic,assumed same as ground
+e- + Aly2D -> e- + Aly2D,Al_elastic_Ryabikh.dat,elastic,elastic,assumed same as ground
+e- + Al+ -> e- + Al+,Al+_elastic_Liebermann.dat,elastic,elastic,from Lieberman
+hv + e- + Al -> e- + Al,1.76e-48*(Te)**-0.5,5,0,"Morel 2010, IB, ignoring stimulated emission"
+hv + e- + Al+ -> e- + Al+,2.51e-47*(Te)**-0.5,5,0,"Morel 2010, IB, ignoring stimulated emission"
+hv + Al42S -> Al+ + e-,3.15E-22,2.158,0,"N.M. Shaikh, S. Hafeez, B. Rashid, and M.A. Baig ""Spectroscopic stidies of laser induced aluminum plasma using fundamental second and third harmonics of a Nd:YAG laser"" Eur. Phys. J. D 44, 371 (2007). Eq. 7 {Zel’dovich Ya B and Raizer Yu P 1967Physics of Shock Waves and High Temperature Hydrodynamic Phenomena(New York: Academic)}"
+hv + Al34P -> Al+ + e-,2.04E-22,2.613,0,"N.M. Shaikh, S. Hafeez, B. Rashid, and M.A. Baig ""Spectroscopic stidies of laser induced aluminum plasma using fundamental second and third harmonics of a Nd:YAG laser"" Eur. Phys. J. D 44, 371 (2007). Eq. 7 {Zel’dovich Ya B and Raizer Yu P 1967Physics of Shock Waves and High Temperature Hydrodynamic Phenomena(New York: Academic)}"
+hv + Al32D -> Al+ + e-,1.25E-22,3.036,0,"N.M. Shaikh, S. Hafeez, B. Rashid, and M.A. Baig ""Spectroscopic stidies of laser induced aluminum plasma using fundamental second and third harmonics of a Nd:YAG laser"" Eur. Phys. J. D 44, 371 (2007). Eq. 7 {Zel’dovich Ya B and Raizer Yu P 1967Physics of Shock Waves and High Temperature Hydrodynamic Phenomena(New York: Academic)}"
+hv + Al42P -> Al+ + e-,1.16E-22,3.099,0,"N.M. Shaikh, S. Hafeez, B. Rashid, and M.A. Baig ""Spectroscopic stidies of laser induced aluminum plasma using fundamental second and third harmonics of a Nd:YAG laser"" Eur. Phys. J. D 44, 371 (2007). Eq. 7 {Zel’dovich Ya B and Raizer Yu P 1967Physics of Shock Waves and High Temperature Hydrodynamic Phenomena(New York: Academic)}"
+hv + Al52S -> Al+ + e-,4.58E-23,3.688,0,"N.M. Shaikh, S. Hafeez, B. Rashid, and M.A. Baig ""Spectroscopic stidies of laser induced aluminum plasma using fundamental second and third harmonics of a Nd:YAG laser"" Eur. Phys. J. D 44, 371 (2007). Eq. 7 {Zel’dovich Ya B and Raizer Yu P 1967Physics of Shock Waves and High Temperature Hydrodynamic Phenomena(New York: Academic)}"
+hv + Aly2D -> Al+ + e-,3.35E-23,3.842,0,"N.M. Shaikh, S. Hafeez, B. Rashid, and M.A. Baig ""Spectroscopic stidies of laser induced aluminum plasma using fundamental second and third harmonics of a Nd:YAG laser"" Eur. Phys. J. D 44, 371 (2007). Eq. 7 {Zel’dovich Ya B and Raizer Yu P 1967Physics of Shock Waves and High Temperature Hydrodynamic Phenomena(New York: Academic)}"
+e- + Al+ -> Al,*rr,0,0,"N. R. Badnell, ""Radiative recombination data for modeling dynamic finite-density plasmas"" The Astrophysical Journal Supplement Series, 167, 334 (2006)"
+e- + Al+ -> Al,*dr,0,0,"Z. Altun, A. Yumak, I. Yavuz, N. R. Badnell, S. D. Lock, and M. S. Pindzola, Astronomy and Astrophysics 474, 1041 (2007)"
+e- + Al+ + e- -> Al + e-,*tbr,0,0,"Y. Hahn, ""Plasma density effects on the three-body recombination rate coefficients"", Physical Letters A 231, 82 (1997)"
+hv + Al -> Aly2D,*broadened_photoexc,0,0,From pressure broadening to state at 4.83 eV
+Aly2D -> Al42P,9.89E+06,0,0,NIST
+Al52S -> Al42P,6.00E+06,0,0,NIST
+Al42P -> Al32D,7.10E+02,0,0,NIST
+Al42S + Al42S -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,0.301,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al42S + Al34P -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,0.756,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al42S + Al32D -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,1.179,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al42S + Al42P -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,1.243,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al42S + Al52S -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,1.831,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al42S + Aly2D -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,1.985,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al34P + Al34P -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,1.211,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al34P + Al32D -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,1.634,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al34P + Al42P -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,1.698,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al34P + Al52S -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,2.286,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al34P + Aly2D -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,2.44,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al32D + Al32D -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,2.057,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al32D + Al42P -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,2.121,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al32D + Al52S -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,2.709,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al32D + Aly2D -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,2.863,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al42P + Al42P -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,2.185,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al42P + Al52S -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,2.773,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al42P + Aly2D -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,2.927,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al52S + Al52S -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,3.361,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al52S + Aly2D -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,3.515,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Aly2D + Aly2D -> Al+ + e- + Al,1.89e-16*(Tg)**-0.5,3.669,0,"A. Bogaerts, K. A. Temelkov, N. K. Vuchkov, R. Gijbels, Spectrochmica Acta Part B 62, 325 (2007)"
+Al42S + Al -> Al + Al,5e-16*(Tg)**-0.5,0,3.143,Estimate
+Al34P + Al -> Al + Al,5e-16*(Tg)**-0.5,0,3.598,Estimate
+Al32D + Al -> Al + Al,5e-16*(Tg)**-0.5,0,4.021,Estimate
+Al42P + Al -> Al + Al,5e-16*(Tg)**-0.5,0,4.085,Estimate
+Al52S + Al -> Al + Al,5e-16*(Tg)**-0.5,0,4.673,Estimate
+Aly2D + Al -> Al + Al,5e-16*(Tg)**-0.5,0,4.827,Estimate
